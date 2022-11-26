@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:'Poppins', 'sans-serif';
+    box-sizing: border-box;
+
+}
+body{
+    background:black;
+    color: white;
+}
+#header{
+   
+    width:100%;
+    height:100vh;
+    background-image: url(/Frontend/pictures/headphone.png);
+   background-position: center;
+   background-size: cover;
+  
+
+  
+
+
+}
+
+.container{
+    padding: 10px 10%;
+    
+    
+
+
+
+}
+.logo{
+    width: 140px;
+}
+.nav{
+    display:flex;
+    align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+    
+}
+    
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 4rem
+
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+
+}
+nav ul li a:hover{
+    
+    color:red;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color:red;
+}
+
+/*-----------about------------*/
+
+
+#about{
+    padding: 80px 0 ;
+    color:grey;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+   
+    padding-left: 3rem;
+
+}
+.about-col-1 img{
+   
+  width:20rem;
+  border-radius: 15px;
+    flex-wrap: wrap;
+    
+}
+about-col-1{
+    flex-basis: 35%;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:white;
+}
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position : relative;
+    
+}
+.tab-links::after{
+    content:"";
+    width:0;
+    height:3px;
+    background: lightgreen;
+    position: absolute;
+    left:0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+
+}
+.tab-contents ul li span{
+    color:lightgreen;
+    font-size: 14px;
+
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display:block;
+
+
+}
+
+
+
