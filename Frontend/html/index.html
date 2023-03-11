@@ -20,20 +20,22 @@
     <div id="header">
         
         <div class="container">
-            <nav>
+            <nav id="sidemenu">
    
-    <ul>
+    <ul >
         
         
-            <li>   <a class="screenings" href="/html/">Home</a> </li>
-            <li>  <a class="screenings" href="/html/screenings.html">About</a></li>
-                <li>   <a class="screenings" href="/html/screenings.html">Skills</a></li>
-                    <li>   <a class="screenings" href="/html/screenings.html">Portfolio</a></li>
-                        <li>   <a class="screenings" href="/html/screenings.html">Screenings</a></li>
-                            <li>   <a class="screenings" href="/html/screenings.html">Contact</a></li>
+            <li>   <a  href="#header">Home</a> </li>
+            <li>  <a  href="#about">About</a></li>
+                <li>   <a  href="#services">Skills</a></li>
+                    <li>   <a  href="#portfolio">Portfolio</a></li>
+                         <li>   <a  href="#contact">Contact</a></li>
+                            <i class="fa-solid fa-xmark"   onclick="closemenu()"></i>
        
     </ul>
+   
     </nav>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     <div class="header-text">
     <p> Web Developer</p>
     <h1>Hello, I am <span>Ofodile</span><br> John From Sweden </h1>
@@ -51,9 +53,11 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        A very ambitiousnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                        A very ambitiousnnnnnnnnn
                         nnnnnnnnnnnnnnnnnnnnnnnnnn
-                        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn 
+                        nnnnnnnnnnnnnnnnnnnnnnnnnn
+                        nnnnnnnnnnnnnnnnnnnnnnnn
+                        nnnnnnnnnnn 
 
                     </p>
                     <div class="tab-titles">
@@ -284,13 +288,14 @@
 
         </div>
         <div class="contact-right">
-           <form>
+           <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
 
             <button type="submit"  class="btn btn2">Submit</button>
            </form>
+        <span id="msg">hello</span>     
         </div>
     </div>
 

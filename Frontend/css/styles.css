@@ -9,6 +9,10 @@ body{
     background:black;
     color: white;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 #header{
    
     width:100%;
@@ -40,7 +44,7 @@ body{
     display:flex;
     flex-wrap: wrap;
    
-    gap: 30px;
+    
 
     
    
@@ -90,9 +94,11 @@ nav ul li a:hover{
 }
 .row{
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
+    padding-left: 2rem;
    
-    padding-left: 3rem;
+   
 
 }
 .about-col-1 img{
@@ -366,7 +372,9 @@ form .btn2{
   margin-top: 20px;
   cursor:pointer;
 }
-
+#header .fa-solid{
+    display: none;
+}
 /*-------------css for small screens-----------------*/
 
 @media only screen and (max-width: 600px){
@@ -392,18 +400,94 @@ form .btn2{
     .header-text h1{
         font-size: 12px;
     }
+
+    nav{
+        height:100vh;
+        background:#ff004f;
+        position:fixed;
+        top:0;
+        right:-200px;
+        width: 200px;
+        transition:right 0.5s;
+        
+        padding-top: 50px;
+        z-index:2;
+      
+    }
+  
+
+    nav ul li{
+        display: block;
+  
+       
+       
+           
+
+    }
+  
+   
   .container  nav ul li a{
     
         list-style: none;
         
         font-size: 11px;
         text-decoration: none;
+        color: #fff;
        
     
-    }
+  }
+
+     #header .fa-solid{
+
+
+        display:block;
+        position:absolute;
+        top:2px;
+        left:47px;
+        cursor:pointer;
+
+           }
+           
+
+           .sub-title{
+            font-size: 30px;
+
+           }
+
+           .about-col-1, .about-col-2{
+            flex-basis: 100%;
+           }
+           .about-col-1{
+            margin-bottom: 30px;
+           }
+           .about-col-2{
+            font-size: 14px ;
+           }
+           .tab-links{
+            font-size: 16px;
+            margin-right: 20px;
+
+           }
+
+           .contact-left, .contact-right{
+            flex-basis: 100%;
+
+
+           }
+           .contact-right{
+            margin-right: 10px;
+           }
+
+          #msg{
+            color:#61b752;
+            margin-top: -40px;
+            display:block;
+          }
+
+        
+        
+        
+    
+   
+   
 }
-
-
-
-
-
